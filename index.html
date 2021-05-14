@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ddd;
+    font-size: 1.1rem; /* Increased base font size */
+}
+
+h1 {
+    font-size: 3.5rem;  /* Increased h1 size */
+    margin-bottom: 1px;
+    color: #00FF00; 
+}
+
+header {
+    background: #1a1a1a;
+    color: #00FF00;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #00FF00;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem; /* Slightly larger gap between navigation items */
+    margin-bottom: 2rem;
+}
+
+nav a, .project a, .experience a, .education a #contact a {
+    color: #9B4DFF; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.1rem; /* Slightly larger link font size */
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ddd;
+    font-size: 1.05rem; /* Slightly increased base font size */
+}
+
+h1 {
+    font-size: 3.25rem;  /* Adjusted h1 size */
+    margin-bottom: 1px;
+    color: #00FF00; 
+}
+
+header {
+    background: #1a1a1a;
+    color: #00FF00;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #00FF00;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.1rem; /* Slightly larger gap between navigation items */
+    margin-bottom: 2rem;
+}
+
+nav a, .project a, .experience a, .education a #contact a {
+    color: #9B4DFF; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.05rem; /* Slightly larger link font size */
+}
+
+nav a:hover, .project a:hover, .experience a:hover, .education a:hover, #contact a:hover {
+    color: #D400FF; 
+}
+
+section {
+    padding: 2.1rem; /* Slightly larger padding for sections */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #00FF00; 
+    font-size: 2.15rem;  /* Adjusted h2 size */
+    margin-bottom: 1.1rem;
+}
+
+.project, .experience, .education {
+    margin-bottom: 2.1rem; /* Slightly larger bottom margin */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.1rem; /* Slightly larger padding */
+    background: #222;
+}
+
+.project img, .video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer {
+    background: #1a1a1a;
+    color: #00FF00;
+    text-align: center;
+    padding: 1.1rem; /* Slightly larger footer padding */
+    margin-top: 2rem;
+    border-top: 2px solid #00FF00;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brian Hoglund</h1>
+        <p>Full-Stack Unity Software Developer</p>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="https://www.github.com/hoglundb" target ="_blank">GitHub</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an experienced software developer with a strong focus on <strong>Unity</strong> and <strong>C#</strong>, specializing in cross-platform game development and interactive experiences. My skill set extends to <strong>.NET web development</strong>, which allows me to seamlessly integrate engaging game mechanics with robust web solutions.
+        </p>
+        <p>
+            Passionate about writing clean, scalable code, I thrive on tackling complex challenges—whether it's creating immersive gameplay systems or designing efficient web applications.
+        </p>
+        <p>
+            While I am unable to share specific details from my work with the Department of Defense, my personal projects showcase similar principles, including object-oriented programming, full-stack web development, and Unity3D development.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Personal Projects</h2>
+        <div class="project">
+            <h3>WebGL DotNet Async Asset Loading</h3>
+            <a href="http://brianhoglundportfolio.com/" target="_blank">
+                <img src="./Images/WebGLProjectThumbNail.png" style="width: 20% !important; height: 20% !important;" alt="Thumbnail">
+            </a>
+            <p>I developed this project to demonstrate how a Unity application can be seamlessly integrated into a .NET project, utilizing asynchronous asset loading to enhance the user experience. It also highlights the use of Unity web requests, including the configuration of HTTP headers for response compression and efficient static file loading.</p>
+        
+            <a href="https://github.com/hoglundb/DotNetWebGL" target="_blank">GitHub Link</a> | <a href="http://brianhoglundportfolio.com/" target="_blank">Deployed Website Link</a>
+        </div>
+        
+        <div class="project">
+            <h3>Behavior Tree AI System</h3>
+            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">
+                <img src="Images/BehaviorTreeThumbnailImage.png" style="width: 20% !important; height: 20% !important;" alt="Thumbnail">
+            </a>
+            <p>This project showcases a C# behavior tree data structure I developed and implemented for animal AI within the Unity Game Engine. It also utilizes a blackboard architecture to manage AI state and decision-making, enabling more dynamic and reactive behaviors in the environment.</p>
+            <a href="https://github.com/hoglundb/UnityAIBehaviorTree", target = "_blank">GitHub Link</a> | <a href="https://www.youtube.com/watch?v=49WsIcEQUdc", target = "_blank">YouTube Video</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience">
+            <h3>Computer Scientist | Naval Undersea Warfare Center, Keyport Division</h3>
+            <p>2020 - Present</p>
+            <ul>
+                <li>Developed AR/VR simulations in Unity to enhance warfighter training and mission preparedness.</li>
+                <li>Built Web and Desktop applications using .NET Core for data visualization and tactical decision-making.</li>
+                <li>Integrated real-world sensor data and APIs into Unity applications for actionable insights.</li>
+                <li>Designed and deployed in-house pipeline tools to improve operational readiness and reduce costs.</li>
+                <li>Optimized AR/VR applications for cutting-edge hardware to ensure seamless performance.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Research Assistant | Oregon State University</h3>
+            <p>2018 - 2020</p>
+            <ul>
+                <li>Contributed to an NSF project developing a web tool for visualizing curriculum alignment with NGSS standards.</li>
+                <li>Implemented data visualization features using .NET and Vis.js frameworks.</li>
+                <li>Designed and optimized database solutions with SQL and NoSQL for data storage and linguistic analysis.</li>
+                <li>Collaborated with researchers to ensure tool usability and data accuracy.</li>
+            </ul>
+            <p>Project Link: <a href="https://www.teachengineering.org/" target="_blank">TeachEngineering.org</a></p>
+        </div>
+        
+    </section>
+
+    <section id="education">
+        <div class="education">
+        <h2>Education</h2>
+        <h3>B.S. Mathematics | Oregon State University 2016</h3>
+        <h3>B.S. Computer Science | Oregon State University 2020</h3>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: brian.g.hoglund@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/brian-hoglund-4059851a5" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/hoglundb" target="_blank">GitHub Profile</a></p>
+    </section>
+        
+    <footer>
+        <p>&copy; 2025 Brian Hoglund. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,134 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #121212;
-    color: #ddd;
-    font-size: 1.1rem; /* Increased base font size */
-}
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #ddd;
+            font-size: 1.05rem;
+            /* Slightly increased base font size */
+        }
 
-h1 {
-    font-size: 3.5rem;  /* Increased h1 size */
-    margin-bottom: 1px;
-    color: #00FF00; 
-}
+        h1 {
+            font-size: 3.25rem;
+            /* Adjusted h1 size */
+            margin-bottom: 1px;
+            color: #00FF00;
+        }
 
-header {
-    background: #1a1a1a;
-    color: #00FF00;
-    padding: 1rem 0;
-    text-align: center;
-    border-bottom: 2px solid #00FF00;
-}
+        header {
+            background: #1a1a1a;
+            color: #00FF00;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #00FF00;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem; /* Slightly larger gap between navigation items */
-    margin-bottom: 2rem;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.1rem;
+            /* Slightly larger gap between navigation items */
+            margin-bottom: 2rem;
+        }
 
-nav a, .project a, .experience a, .education a #contact a {
-    color: #9B4DFF; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 1.1rem; /* Slightly larger link font size */
-}
+        nav a,
+        .project a,
+        .experience a,
+        .education a,
+        #contact a {
+            color: #9B4DFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1.05rem;
+            /* Slightly larger link font size */
+        }
 
-body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #121212;
-    color: #ddd;
-    font-size: 1.05rem; /* Slightly increased base font size */
-}
+        nav a:hover,
+        .project a:hover,
+        .experience a:hover,
+        .education a:hover,
+        #contact a:hover {
+            color: #D400FF;
+        }
 
-h1 {
-    font-size: 3.25rem;  /* Adjusted h1 size */
-    margin-bottom: 1px;
-    color: #00FF00; 
-}
+        section {
+            padding: 2.1rem;
+            /* Slightly larger padding for sections */
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-header {
-    background: #1a1a1a;
-    color: #00FF00;
-    padding: 1rem 0;
-    text-align: center;
-    border-bottom: 2px solid #00FF00;
-}
+        h2 {
+            color: #00FF00;
+            font-size: 2.15rem;
+            /* Adjusted h2 size */
+            margin-bottom: 1.1rem;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1.1rem; /* Slightly larger gap between navigation items */
-    margin-bottom: 2rem;
-}
+        .project,
+        .experience,
+        .education {
+            margin-bottom: 2.1rem;
+            /* Slightly larger bottom margin */
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.1rem;
+            /* Slightly larger padding */
+            background: #222;
+        }
 
-nav a, .project a, .experience a, .education a #contact a {
-    color: #9B4DFF; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 1.05rem; /* Slightly larger link font size */
-}
+        .project img,
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-nav a:hover, .project a:hover, .experience a:hover, .education a:hover, #contact a:hover {
-    color: #D400FF; 
-}
-
-section {
-    padding: 2.1rem; /* Slightly larger padding for sections */
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-h2 {
-    color: #00FF00; 
-    font-size: 2.15rem;  /* Adjusted h2 size */
-    margin-bottom: 1.1rem;
-}
-
-.project, .experience, .education {
-    margin-bottom: 2.1rem; /* Slightly larger bottom margin */
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 1.1rem; /* Slightly larger padding */
-    background: #222;
-}
-
-.project img, .video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-section {
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-footer {
-    background: #1a1a1a;
-    color: #00FF00;
-    text-align: center;
-    padding: 1.1rem; /* Slightly larger footer padding */
-    margin-top: 2rem;
-    border-top: 2px solid #00FF00;
-}
+        footer {
+            background: #1a1a1a;
+            color: #00FF00;
+            text-align: center;
+            padding: 1.1rem;
+            /* Slightly larger footer padding */
+            margin-top: 2rem;
+            border-top: 2px solid #00FF00;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Brian Hoglund</h1>
@@ -136,114 +114,196 @@ footer {
         <nav>
             <a href="#projects">Projects</a> |
             <a href="#experience">Experience</a> |
-            <a href="https://www.github.com/hoglundb" target ="_blank">GitHub</a> |
+            <a href="https://www.github.com/hoglundb" target="_blank">GitHub</a> |
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a versatile software developer experienced in web development, database design, and interactive applications. I build scalable .NET web platforms and data-driven backend systems as well as cross-platform games and simulations using Unity, including WebGL and AR/VR. I enjoy creating solutions that connect engaging user experiences with solid backend architecture. Writing clean, maintainable code and solving complex problems are what I am passionate about. Feel free to explore some of my work below.
-
-</p>
+        <p>
+            I am a versatile software developer experienced in web development, database design, and
+            interactive applications. I build scalable .NET web platforms and data-driven backend systems
+            as well as cross-platform games and simulations using Unity, including WebGL and AR/VR. I
+            enjoy creating solutions that connect engaging user experiences with solid backend architecture.
+            Writing clean, maintainable code and solving complex problems are what I am passionate about.
+            Feel free to explore some of my work below.
+        </p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>  
-                <div class="project">
-            <h3>Object Pooling</h3>
-                <img src="./Images/ObjectPoolingThumbnailImage.png" alt="Object Pooling Thumbnail" style="width: 20%; height: auto;"> 
-                 <p>This C#/Unity project demonstrates a robust and efficient object pooling system. Object pooling is a crucial optimization technique in game development, especially for frequently instantiated objects like projectiles, enemies, or effects. This system features a generic ObjectPool<T> class, inheritance-driven design using an abstract PoolableObject class, and a centralized PoolManager for easy access and management.  A time-based example demonstrates practical application.  This approach minimizes garbage collection, improves performance, and promotes code reusability.</p> 
-                 <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank">GitHub Link</a>        
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Chess App with React.js and Node.js</h3>
+            <img src="./Images/ChessThumbnailImage.png" alt="Object Pooling Thumbnail"
+                style="width: 20%; height: auto" />
+            <p>
+                A full-stack chess application built with React and Node.js that integrates
+                <strong>react-chess</strong> for the interactive board UI, <strong>chess.js</strong> for game rules and validation,
+                and a backend Stockfish AI engine for strong computer opponent moves. Features custom React components for game setup,
+                time controls,
+                endgame overlays, and AI bot selection. Designed primarily for Linux, but easily adapted to Windows with alternate
+                Stockfish binaries.
+                This project highlights clean integration of third-party chess libraries, asynchronous AI processing, and modern React
+                state management.
+            </p>
+            <a href="https://github.com/hoglundb/react-chess-app" target="_blank">GitHub Link</a>
+            |
+            <a href="http://164.92.71.189:4000/" target="_blank">Deployed Website Link</a>
         </div>
-            <div class="project">
+
+        <div class="project">
+            <h3>Object Pooling</h3>
+            <img src="./Images/ObjectPoolingThumbnailImage.png" alt="Object Pooling Thumbnail"
+                style="width: 20%; height: auto" />
+            <p>
+                This C#/Unity project demonstrates a robust and efficient object pooling system. Object pooling
+                is a crucial optimization technique in game development, especially for frequently instantiated
+                objects like projectiles, enemies, or effects. This system features a generic ObjectPool&lt;T&gt;
+                class, inheritance-driven design using an abstract PoolableObject class, and a centralized
+                PoolManager for easy access and management. A time-based example demonstrates practical
+                application. This approach minimizes garbage collection, improves performance, and promotes
+                code reusability.
+            </p>
+            <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project">
             <h3>Behavior Tree AI System</h3>
             <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">
-                <img src="Images/BehaviorTreeThumbnailImage.png" style="width: 20% !important; height: 20% !important;" alt="Thumbnail">
+                <img src="Images/BehaviorTreeThumbnailImage.png" style="width: 20% !important; height: 20% !important"
+                    alt="Thumbnail" />
             </a>
-            <p>This project showcases a C# behavior tree data structure I developed and implemented for animal AI within the Unity Game Engine. It also utilizes a blackboard architecture to manage AI state and decision-making, enabling more dynamic and reactive behaviors in the environment.</p>
-            <a href="https://github.com/hoglundb/UnityAIBehaviorTree" target="_blank">GitHub Link</a> | <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">YouTube Video</a>
-       
-        </div>      
-      <div class="project">
+            <p>
+                This project showcases a C# behavior tree data structure I developed and implemented for animal
+                AI within the Unity Game Engine. It also utilizes a blackboard architecture to manage AI state
+                and decision-making, enabling more dynamic and reactive behaviors in the environment.
+            </p>
+            <a href="https://github.com/hoglundb/UnityAIBehaviorTree" target="_blank">GitHub Link</a> |
+            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">YouTube Video</a>
+        </div>
+
+        <div class="project">
             <h3>WebGL DotNet Async Asset Loading</h3>
             <a href="http://brianhoglundportfolio.com/" target="_blank">
-                <img src="./Images/WebGLProjectThumbNail.png" style="width: 20% !important; height: 20% !important;" alt="Thumbnail">
+                <img src="./Images/WebGLProjectThumbNail.png" style="width: 20% !important; height: 20% !important"
+                    alt="Thumbnail" />
             </a>
-            <p>I developed this project to demonstrate how a Unity application can be seamlessly integrated into a .NET project, utilizing asynchronous asset loading to enhance the user experience. It also highlights the use of Unity web requests, including the configuration of HTTP headers for response compression and efficient static file loading.</p>
+            <p>
+                I developed this project to demonstrate how a Unity application can be seamlessly integrated
+                into a .NET project, utilizing asynchronous asset loading to enhance the user experience. It
+                also highlights the use of Unity web requests, including the configuration of HTTP headers for
+                response compression and efficient static file loading.
+            </p>
             <a href="https://github.com/hoglundb/DotNetWebGL" target="_blank">GitHub Link</a>
         </div>
-    
+
         <div class="project">
             <h3>Cross-Platform 3D Visualization and Inspection Tool</h3>
-            <img src="./Images/TorpdeoImage.png" style="width: 20% !important; height: 20% !important;" alt="Placeholder Thumbnail">
-            <p>Developed a cross-platform (web, desktop, VR) 3D visualization and inspection tool using Unity and WebGL for the <i>Keyport Naval Undersea Warfare Center</i>. This tool enabled detailed breakdown and inspection of complex mechanical assets, including metadata visualization derived from CAD models. Developed automation tools that streamlined the integration of new assets into the application, significantly reducing development time and effort.</p>
-            <p>Skills: Unity development, WebGL, VR development, 3D visualization, data visualization, automation tools, cross-platform development, CAD integration.</p>
-             <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via" target="_blank">Software Demo Video Link </a>(Public Release Version)
+            <img src="./Images/TorpdeoImage.png" style="width: 20% !important; height: 20% !important"
+                alt="Placeholder Thumbnail" />
+            <p>
+                Developed a cross-platform (web, desktop, VR) 3D visualization and inspection tool using Unity and
+                WebGL for the <i>Keyport Naval Undersea Warfare Center</i>. This tool enabled detailed breakdown
+                and inspection of complex mechanical assets, including metadata visualization derived from CAD
+                models. Developed automation tools that streamlined the integration of new assets into the
+                application, significantly reducing development time and effort.
+            </p>
+            <p>
+                Skills: Unity development, WebGL, VR development, 3D visualization, data visualization, automation
+                tools, cross-platform development, CAD integration.
+            </p>
+            <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via"
+                target="_blank">Software Demo Video Link </a>(Public Release Version)
         </div>
-    
+
         <div class="project">
             <h3>Data Integration and Automation System for Naval Analytics</h3>
-            <img src="Images/SubAndTorpedoImage.png" style="width: 20% !important; height: 20% !important;" alt="Placeholder Thumbnail">
-            <p>Developed a robust data integration and automation system for NAVSEA, enabling real-time data availability for analysts. This involved designing and implementing a SQL database, automating data collection from diverse sources (including web APIs, web scraping, and external databases), and creating optimized queries and views for use in data visualization tools.  Successfully managed large and complex datasets, ensuring data quality and accessibility. Collaborated with stakeholders to understand their needs and deliver effective solutions within system constraints.</p>
-            <p>Skills: .NET Core development, SQL database design and development, data integration, data automation, web scraping, API integration, PowerShell scripting, data analysis, stakeholder collaboration.</p>
+            <img src="Images/SubAndTorpedoImage.png" style="width: 20% !important; height: 20% !important"
+                alt="Placeholder Thumbnail" />
+            <p>
+                Developed a robust data integration and automation system for NAVSEA, enabling real-time data
+                availability for analysts. This involved designing and implementing a SQL database, automating
+                data collection from diverse sources (including web APIs, web scraping, and external databases),
+                and creating optimized queries and views for use in data visualization tools. Successfully managed
+                large and complex datasets, ensuring data quality and accessibility. Collaborated with stakeholders
+                to understand their needs and deliver effective solutions within system constraints.
+            </p>
+            <p>
+                Skills: .NET Core development, SQL database design and development, data integration, data
+                automation, web scraping, API integration, PowerShell scripting, data analysis, stakeholder
+                collaboration.
+            </p>
         </div>
-    
     </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
+
         <div class="experience">
             <h3>Computer Scientist | Naval Undersea Warfare Center, Keyport Division</h3>
             <p>2020 - Present</p>
             <ul>
                 <li>Developed AR/VR simulations in Unity to enhance warfighter training and mission preparedness.</li>
-                <li>Built and maintained enterprise web applications using .NET Core, SQL, and modern front-end frameworks to support data visualization and tactical decision-making.</li>
+                <li>Built and maintained enterprise web applications using .NET Core, SQL, and modern front-end
+                    frameworks to support data visualization and tactical decision-making.</li>
                 <li>Integrated real-world sensor data and APIs into Unity applications for actionable insights.</li>
-                <li>Designed and deployed in-house pipeline tools to improve operational readiness and reduce costs.</li>
+                <li>Designed and deployed in-house pipeline tools to improve operational readiness and reduce costs.
+                </li>
                 <li>Optimized AR/VR applications for cutting-edge hardware to ensure seamless performance.</li>
             </ul>
         </div>
-        
+
         <div class="experience">
             <h3>Research Assistant | Oregon State University</h3>
             <p>2018 - 2020</p>
             <ul>
-                <li>Contributed to an NSF-funded academic research project by developing a web tool to visualize curriculum alignment with NGSS standards; work supported publication efforts.</li>
+                <li>Contributed to an NSF-funded academic research project by developing a web tool to visualize
+                    curriculum alignment with NGSS standards; work supported publication efforts.</li>
                 <li>Implemented data visualization features using PHP Laravel, Vis.js and Vue.js frameworks.</li>
-                <li>Designed and optimized database solutions with .Net, SQL and NoSQL for data storage and linguistic analysis.</li>
+                <li>Designed and optimized database solutions with .Net, SQL and NoSQL for data storage and linguistic
+                    analysis.</li>
                 <li>Collaborated with researchers to ensure tool usability and data accuracy.</li>
             </ul>
             <p>You can view my published work <a href="https://tinyurl.com/54u3yn6p" target="_blank">here.</a></p>
         </div>
-        
+
         <div class="experience">
             <h3>Web Application Developer (Contract) | Nova Dynamics</h3>
-            <p>03/2020 - 05/2020</p>  <ul>
-                <li>Developed a web-based part tracking and inventory tool using Node.js, JavaScript, MySQL, Bootstrap, jQuery, and HTML5.</li>
-                <li>Automated and improved existing part tracking processes for engineers and management.</li>              
+            <p>03/2020 - 05/2020</p>
+            <ul>
+                <li>Developed a web-based part tracking and inventory tool using Node.js, JavaScript, MySQL, Bootstrap,
+                    jQuery, and HTML5.</li>
+                <li>Automated and improved existing part tracking processes for engineers and management.</li>
             </ul>
         </div>
-        
     </section>
 
     <section id="education">
         <div class="education">
-        <h2>Education</h2>
-        <h3>B.S. Computer Science | Oregon State University 2020</h3>
-        <h3>B.S. Mathematics | Oregon State University 2016</h3>       
-    </div>
+            <h2>Education</h2>
+            <h3>B.S. Computer Science | Oregon State University 2020</h3>
+            <h3>B.S. Mathematics | Oregon State University 2016</h3>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: brian.g.hoglund@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/brian-gordon-hoglund-dev" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/hoglundb" target="_blank">GitHub Profile</a></p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/brian-gordon-hoglund-dev" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p>
+            GitHub:
+            <a href="https://github.com/hoglundb" target="_blank">GitHub Profile</a>
+        </p>
     </section>
-        
+
     <footer>
         <p>&copy; 2025 Brian Hoglund. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

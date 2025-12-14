@@ -15,12 +15,10 @@
             background-color: #121212;
             color: #ddd;
             font-size: 1.05rem;
-            /* Slightly increased base font size */
         }
 
         h1 {
             font-size: 3.25rem;
-            /* Adjusted h1 size */
             margin-bottom: 1px;
             color: #00FF00;
         }
@@ -37,7 +35,6 @@
             display: flex;
             justify-content: center;
             gap: 1.1rem;
-            /* Slightly larger gap between navigation items */
             margin-bottom: 2rem;
         }
 
@@ -51,7 +48,6 @@
             font-weight: bold;
             transition: color 0.3s ease;
             font-size: 1.05rem;
-            /* Slightly larger link font size */
         }
 
         nav a:hover,
@@ -64,7 +60,6 @@
 
         section {
             padding: 2.1rem;
-            /* Slightly larger padding for sections */
             max-width: 900px;
             margin: 0 auto;
         }
@@ -72,7 +67,6 @@
         h2 {
             color: #00FF00;
             font-size: 2.15rem;
-            /* Adjusted h2 size */
             margin-bottom: 1.1rem;
         }
 
@@ -80,11 +74,9 @@
         .experience,
         .education {
             margin-bottom: 2.1rem;
-            /* Slightly larger bottom margin */
             border: 1px solid #333;
             border-radius: 8px;
             padding: 1.1rem;
-            /* Slightly larger padding */
             background: #222;
         }
 
@@ -100,9 +92,17 @@
             color: #00FF00;
             text-align: center;
             padding: 1.1rem;
-            /* Slightly larger footer padding */
             margin-top: 2rem;
             border-top: 2px solid #00FF00;
+        }
+
+        ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
@@ -122,12 +122,12 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a versatile software developer with strong expertise in web development, database design, and interactive
-            applications. I build scalable, maintainable .NET web platforms and data-driven backend systems, delivering robust
-            solutions that support critical business needs. Alongside this, I design and develop cross-platform games and
-            simulations using Unity, including WebGL and AR/VR experiences. I enjoy bridging engaging user interfaces with solid
-            backend architecture, writing clean code, and solving complex problems. Feel free to explore some of my projects below
-            that demonstrate these skills across web and interactive domains.
+            Full-stack software developer with six years of experience shipping production VR systems for naval
+            education training. I specialize in large-scale platform architecture, technical leadership, and complex
+            system migrations. I combine deep expertise in immersive 3D development and performance optimization with a
+            proven ability to lead multidisciplinary teams through modernization efforts. I'm driven by collaborative
+            problem-solving, writing clean maintainable code, and architecting robust solutions that serve production
+            environments at scale.
         </p>
     </section>
 
@@ -135,22 +135,60 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>Chess App with React.js and Node.js</h3>
-            <img src="./Images/ChessThumbnailImage.png" alt="Object Pooling Thumbnail"
-                style="width: 20%; height: auto" />
+            <h3>Scalable Home Visualization Platform - Unity 2019 to Unity 6 Migration</h3>
+            <img src="./Images/homeconfigure.png" style="width: 35%; height: auto" />
             <p>
-                A full-stack chess application built with React and Node.js that integrates
-                <strong>react-chess</strong> for the interactive board UI, <strong>chess.js</strong> for game rules and validation,
-                and a backend Stockfish AI engine for strong computer opponent moves. Features custom React components for game setup,
-                time controls,
-                endgame overlays, and AI bot selection. Designed primarily for Linux, but easily adapted to Windows with alternate
-                Stockfish binaries.
-                This project highlights clean integration of third-party chess libraries, asynchronous AI processing, and modern React
-                state management.
+                Led a large-scale migration of 1000+ runtime-loaded assets from Unity 2019 to Unity 6 HDRP for a
+                production home visualization platform serving hundreds of customers and thousands of concurrent users.
+                Designed and implemented a robust asset bundling pipeline to solve shader and HDRP compatibility issues,
+                and built an automated testing system to validate asset upgrades across the entire migration.
             </p>
-            <a href="https://github.com/hoglundb/react-chess-app" target="_blank">GitHub Link</a>
-            |
-            <a href="https://brianhoglundportfolio.com/" target="_blank">Deployed Website Link</a>
+            <p>
+                <strong>Skills:</strong> Unity 6, HDRP, Asset Bundles, Shader Optimization, C#, Automated Testing,
+                Performance Optimization, Cross-Platform Development, Team Collaboration.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Cross-Platform 3D Visualization and Inspection Tool</h3>
+            <img src="./Images/TorpdeoImage.png" style="width: 20% !important; height: 20% !important"
+                alt="3D Visualization Tool Thumbnail" />
+            <p>
+                Developed and shipped a cross-platform (web, desktop, VR) 3D visualization and inspection tool using
+                Unity and
+                WebGL for the <i>Keyport Naval Undersea Warfare Center</i>. This tool enabled detailed breakdown
+                and inspection of complex mechanical assets, including metadata visualization derived from CAD
+                models. Developed automation tools that streamlined the integration of new assets into the
+                application, significantly reducing development time and effort.
+            </p>
+            <p>
+                <strong>Skills:</strong> Unity development, WebGL, VR development, 3D visualization, data visualization,
+                automation
+                tools, cross-platform development, CAD integration.
+            </p>
+            <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via"
+                target="_blank">Software Demo Video Link</a> (Public Release Version)
+        </div>
+
+        <div class="project">
+            <h3>Data Integration and Automation System for Naval Analytics</h3>
+            <img src="Images/SubAndTorpedoImage.png" style="width: 20% !important; height: 20% !important"
+                alt="Naval Analytics Thumbnail" />
+            <p>
+                Developed and shipped a robust data integration and automation system for NAVSEA, enabling real-time
+                data
+                availability for analysts. This involved designing and implementing a SQL database, automating
+                data collection from diverse sources (including web APIs, web scraping, and external databases),
+                and creating optimized queries and views for use in data visualization tools. Successfully managed
+                large and complex datasets, ensuring data quality and accessibility. Collaborated with stakeholders
+                to understand their needs and deliver effective solutions within system constraints.
+            </p>
+            <p>
+                <strong>Skills:</strong> .NET Core development, SQL database design and development, data integration,
+                data
+                automation, web scraping, API integration, PowerShell scripting, data analysis, stakeholder
+                collaboration.
+            </p>
         </div>
 
         <div class="project">
@@ -158,11 +196,16 @@
             <img src="./Images/ObjectPoolingThumbnailImage.png" alt="Object Pooling Thumbnail"
                 style="width: 20%; height: auto" />
             <p>
-                This project implements a robust and efficient object pooling system using C# and Unity, designed to optimize
-                performance by reducing costly object instantiation and garbage collection. Leveraging <em>.NET object-oriented
-                    principles</em>, it features a generic <code>ObjectPool<T></code> class, an abstract <code>PoolableObject</code>
-                base class for inheritance, and a centralized <code>PoolManager</code> for streamlined access and management. A
-                practical, time-based example illustrates its effectiveness. This design enhances performance, promotes code reuse, and
+                This project implements a robust and efficient object pooling system using C# and Unity, designed to
+                optimize
+                performance by reducing costly object instantiation and garbage collection. Leveraging <em>.NET
+                    object-oriented
+                    principles</em>, it features a generic <code>ObjectPool<T></code> class, an abstract
+                <code>PoolableObject</code>
+                base class for inheritance, and a centralized <code>PoolManager</code> for streamlined access and
+                management. A
+                practical, time-based example illustrates its effectiveness. This design enhances performance, promotes
+                code reuse, and
                 demonstrates <em>solid software engineering practices applicable beyond game development</em>.
             </p>
             <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank">GitHub Link</a>
@@ -172,107 +215,102 @@
             <h3>Behavior Tree AI System</h3>
             <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">
                 <img src="Images/BehaviorTreeThumbnailImage.png" style="width: 20% !important; height: 20% !important"
-                    alt="Thumbnail" />
+                    alt="Behavior Tree Thumbnail" />
             </a>
             <p>
-            This project showcases a C# behavior tree data structure I developed and implemented for animal AI within the Unity Game
-            Engine. Built using .NET design principles, it also utilizes a blackboard architecture to manage AI state and
-            decision-making, enabling more dynamic and reactive behaviors in the environment.
+                This project showcases a C# behavior tree data structure I developed and implemented for animal AI
+                within the Unity Game
+                Engine. Built using .NET design principles, it also utilizes a blackboard architecture to manage AI
+                state and
+                decision-making, enabling more dynamic and reactive behaviors in the environment.
             </p>
             <a href="https://github.com/hoglundb/UnityAIBehaviorTree" target="_blank">GitHub Link</a> |
             <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">YouTube Video</a>
         </div>
 
-        <!-- <div class="project">
-            <h3>WebGL DotNet Async Asset Loading</h3>
-            <a href="http://brianhoglundportfolio.com/" target="_blank">
-                <img src="./Images/WebGLProjectThumbNail.png" style="width: 20% !important; height: 20% !important"
-                    alt="Thumbnail" />
-            </a>
-            <p>
-                I developed this project to demonstrate how a Unity application can be seamlessly integrated
-                into a .NET project, utilizing asynchronous asset loading to enhance the user experience. It
-                also highlights the use of Unity web requests, including the configuration of HTTP headers for
-                response compression and efficient static file loading.
-            </p>
-            <a href="https://github.com/hoglundb/DotNetWebGL" target="_blank">GitHub Link</a>
-        </div> -->
-
         <div class="project">
-            <h3>Data Integration and Automation System for Naval Analytics</h3>
-            <img src="Images/SubAndTorpedoImage.png" style="width: 20% !important; height: 20% !important"
-                alt="Placeholder Thumbnail" />
+            <h3>Chess App with React.js and Node.js</h3>
+            <img src="./Images/ChessThumbnailImage.png" alt="Chess App Thumbnail" style="width: 20%; height: auto" />
             <p>
-                Developed a robust data integration and automation system for NAVSEA, enabling real-time data
-                availability for analysts. This involved designing and implementing a SQL database, automating
-                data collection from diverse sources (including web APIs, web scraping, and external databases),
-                and creating optimized queries and views for use in data visualization tools. Successfully managed
-                large and complex datasets, ensuring data quality and accessibility. Collaborated with stakeholders
-                to understand their needs and deliver effective solutions within system constraints.
+                A full-stack chess application built with React and Node.js that integrates
+                <strong>react-chess</strong> for the interactive board UI, <strong>chess.js</strong> for game rules and
+                validation,
+                and a backend Stockfish AI engine for strong computer opponent moves. Features custom React components
+                for game setup,
+                time controls,
+                endgame overlays, and AI bot selection. Designed primarily for Linux, but easily adapted to Windows with
+                alternate
+                Stockfish binaries.
+                This project highlights clean integration of third-party chess libraries, asynchronous AI processing,
+                and modern React
+                state management.
             </p>
-            <p>
-                Skills: .NET Core development, SQL database design and development, data integration, data
-                automation, web scraping, API integration, PowerShell scripting, data analysis, stakeholder
-                collaboration.
-            </p>
+            <a href="https://github.com/hoglundb/react-chess-app" target="_blank">GitHub Link</a>
+            |
+            <a href="https://brianhoglundportfolio.com/" target="_blank">Deployed Website Link</a>
         </div>
-
-        <div class="project">
-            <h3>Cross-Platform 3D Visualization and Inspection Tool</h3>
-            <img src="./Images/TorpdeoImage.png" style="width: 20% !important; height: 20% !important"
-                alt="Placeholder Thumbnail" />
-            <p>
-                Developed a cross-platform (web, desktop, VR) 3D visualization and inspection tool using Unity and
-                WebGL for the <i>Keyport Naval Undersea Warfare Center</i>. This tool enabled detailed breakdown
-                and inspection of complex mechanical assets, including metadata visualization derived from CAD
-                models. Developed automation tools that streamlined the integration of new assets into the
-                application, significantly reducing development time and effort.
-            </p>
-            <p>
-                Skills: Unity development, WebGL, VR development, 3D visualization, data visualization, automation
-                tools, cross-platform development, CAD integration.
-            </p>
-            <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via"
-                target="_blank">Software Demo Video Link </a>(Public Release Version)
-        </div>       
     </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
 
         <div class="experience">
-            <h3>Computer Scientist | Naval Undersea Warfare Center, Keyport Division</h3>
-            <p>2020 - Present</p>
-        <ul>
-            <li>Built, maintained, and scaled enterprise web applications using <strong>.NET Core</strong>, <strong>SQL
-                    Server</strong>, and modern front-end frameworks, supporting complex data visualization, tactical
-                decision-making, and operational workflows.</li>
-            <li>Designed and implemented <strong>SQL Server data warehousing</strong> solutions including ETL processes, views,
-                and stored procedures to enable high-performance reporting and analytics for internal stakeholders.</li>
-            <li>Integrated diverse real-world sensor data and external APIs into <strong>WebGL</strong>, <strong>Unity</strong>
-                applications, and web platforms to deliver actionable, real-time insights.</li>
-            <li>Created and deployed in-house <strong>pipeline automation tools</strong> that streamlined operational readiness
-                and reduced costs.</li>
-            <li>Developed <strong>AR/VR simulations</strong> in <strong>Unity</strong> to enhance warfighter training and
-                mission preparedness.</li>
-            <li>Optimized AR/VR and WebGL applications for advanced hardware platforms, ensuring smooth, immersive, and
-                performant user experiences.</li>
-        </ul>
+            <h3>Senior Unity Software Engineer | WTS Paradigm</h3>
+            <p>August 2025 - Present</p>
+            <ul>
+                <li>Architected and executed automated <strong>Unity 6 migration</strong> of 1000+ runtime-loaded assets
+                    in <strong>HDRP</strong>, serving thousands of concurrent users in production home visualization
+                    system.</li>
+                <li>Designed dynamic asset loading system using <strong>asset bundles and addressable patterns</strong>
+                    for scalable on-demand content delivery.</li>
+                <li>Led codebase refactoring initiative establishing <strong>architectural standards</strong> and
+                    <strong>separation of concerns</strong> for long-term maintainability across engineering team.</li>
+                <li>Standardized <strong>AI-assisted code review workflows</strong> using Claude GitHub integration and
+                    centralized planning agents, improving code quality and team velocity.</li>
+                <li>Implemented <strong>C++ unit testing infrastructure</strong> for Blender plugin development using
+                    <strong>Jenkins CI/CD</strong> pipeline, enabling quality standards for custom art asset tools.</li>
+                <li>Collaborated in daily standups, sprint planning, and ticket refinement to ensure timely delivery and
+                    alignment across multidisciplinary teams.</li>
+            </ul>
+        </div>
 
+        <div class="experience">
+            <h3>Computer Scientist | Naval Undersea Warfare Center, Keyport Division</h3>
+            <p>2020 - July 2025</p>
+            <ul>
+                <li>Architected and shipped <strong>production VR trainers</strong> for naval personnel, including
+                    Virginia-class submarine systems and torpedo assembly procedures; deployed continuous training
+                    module updates as classroom requirements evolved.</li>
+                <li>Collaborated with educators, engineers, and customers to translate complex maintenance documentation
+                    into engaging interactive learning experiences, customizing <strong>UI design in VR</strong> to meet
+                    specific training needs.</li>
+                <li>Built <strong>data-driven CAD geometry-to-Unity import pipeline</strong> and automation tools,
+                    enabling rapid art team iteration and reducing asset preparation time.</li>
+                <li>Optimized VR performance through efficient <strong>C# memory management</strong>,
+                    <strong>event-driven architecture</strong>, and <strong>Scriptable Render Pipeline</strong>
+                    configuration across multiple VR platforms.</li>
+                <li>Implemented <strong>MRTK3 and OpenXR</strong> for cross-platform VR input handling and device
+                    compatibility.</li>
+                <li>Integrated diverse sensor data and external APIs into <strong>WebGL</strong>, <strong>Unity</strong>
+                    applications supporting operational workflows and tactical decision-making.</li>
+            </ul>
         </div>
 
         <div class="experience">
             <h3>Research Assistant | Oregon State University</h3>
             <p>2018 - 2020</p>
             <ul>
-            <li>Contributed to an NSF-funded academic research project by developing a <strong>web tool</strong> to visualize
-                curriculum alignment with <strong>NGSS standards</strong>; work supported publication efforts.</li>
-            <li>Implemented data visualization features using <strong>PHP Laravel</strong>, <strong>Vis.js</strong>, and
-                <strong>Vue.js</strong> frameworks.</li>
-            <li>Designed and optimized database solutions with <strong>.NET</strong>, <strong>SQL</strong>, and
-                <strong>NoSQL</strong> for data storage and linguistic analysis.</li>
-            <li>Collaborated with researchers to ensure tool usability and data accuracy.</li>
-
+                <li>Contributed to an NSF-funded academic research project by developing a <strong>web tool</strong> to
+                    visualize
+                    curriculum alignment with <strong>NGSS standards</strong>; work supported publication efforts.</li>
+                <li>Implemented data visualization features using <strong>PHP Laravel</strong>, <strong>Vis.js</strong>,
+                    and
+                    <strong>Vue.js</strong> frameworks.
+                </li>
+                <li>Designed and optimized database solutions with <strong>.NET</strong>, <strong>SQL</strong>, and
+                    <strong>NoSQL</strong> for data storage and linguistic analysis.
+                </li>
+                <li>Collaborated with researchers to ensure tool usability and data accuracy.</li>
             </ul>
             <p>You can view my published work <a href="https://tinyurl.com/54u3yn6p" target="_blank">here.</a></p>
         </div>

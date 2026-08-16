@@ -80,11 +80,27 @@
             background: #222;
         }
 
-        .project img,
         .video {
             width: 100%;
             height: auto;
             border-radius: 8px;
+        }
+
+        .project-thumb {
+            width: 280px;
+            max-width: 100%;
+            height: 170px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #000;
+        }
+
+        .project-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         footer {
@@ -114,7 +130,7 @@
         <nav>
             <a href="#projects">Projects</a> |
             <a href="#experience">Experience</a> |
-            <a href="https://www.github.com/hoglundb" target="_blank">GitHub</a> |
+            <a href="https://www.github.com/hoglundb" target="_blank" rel="noopener noreferrer">GitHub</a> |
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -122,12 +138,13 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Full-stack software developer with six years of experience shipping production VR systems for naval
-            education training. I specialize in large-scale platform architecture, technical leadership, and complex
-            system migrations. I combine deep expertise in immersive 3D development and performance optimization with a
-            proven ability to lead multidisciplinary teams through modernization efforts. I'm driven by collaborative
-            problem-solving, writing clean maintainable code, and architecting robust solutions that serve production
-            environments at scale.
+            Full-stack software developer with six years shipping production XR systems for naval education training.
+            I specialize in large-scale platform architecture, technical leadership, and complex system migrations,
+            with deep expertise in immersive 3D development, rendering engines, and performance optimization across
+            Unity, C++, and Blender. I'm also leaning hard into AI-assisted development with Claude, building agentic
+            coding workflows and architecture patterns that help teams ship faster without cutting corners. Above
+            all, I care about collaborative problem-solving, clean maintainable code, and building robust systems
+            that hold up at production scale.
         </p>
     </section>
 
@@ -135,24 +152,84 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>Scalable Home Visualization Platform - Unity 2019 to Unity 6 Migration</h3>
-            <img src="./Images/homeconfigure.png" style="width: 35%; height: auto" />
+            <h3>VIXTRION - Virtual Systems Engineering Platforms</h3>
+            <a href="https://www.vixtrion.com/" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb">
+                    <img src="./Images/VixtrionThumbnail.png" alt="VIXTRION Thumbnail" />
+                </div>
+            </a>
             <p>
-                Led a large-scale migration of 1000+ runtime-loaded assets from Unity 2019 to Unity 6 HDRP for a
-                production home visualization platform serving hundreds of customers and thousands of concurrent users.
-                Designed and implemented a robust asset bundling pipeline to solve shader and HDRP compatibility issues,
-                and built an automated testing system to validate asset upgrades across the entire migration.
+                Co-developed two Unity WebGL training platforms with technical artist Bryan Woodard.
             </p>
+            <ul>
+                <li>Built the Unity architecture, application logic, and coding, designing both platforms as
+                    <strong>scalable, reusable systems</strong> that can drive any mechanical assembly or maintenance
+                    procedure, not just the ones shown.</li>
+                <li>Interactive 3D assembly explorer for disassembling and identifying components down to individual
+                    fasteners.</li>
+                <li>Guided procedures trainer modeled on a hydrostatic test tank used for military pressure testing of
+                    torpedoes, with safety interlocks and certification workflows.</li>
+                <li><strong>Skills:</strong> Unity WebGL, scalable application architecture,
+                    part-selection/raycasting systems, C#, WebGL performance optimization, procedural/simulation
+                    training design.</li>
+                <li><em>Artwork &amp; animation by Bryan Woodard. Hydrostatic test tank data provided by SAIC.</em>
+                </li>
+            </ul>
+            <a href="https://www.vixtrion.com/" target="_blank" rel="noopener noreferrer">Visit VIXTRION</a>
+        </div>
+
+        <div class="project">
+            <h3>Home Configure - Blender Render Service</h3>
+            <div class="project-thumb">
+                <img src="./Images/BlenderHomeConfigureThunbnail.png" alt="Blender Render Service Thumbnail" />
+            </div>
             <p>
-                <strong>Skills:</strong> Unity 6, HDRP, Asset Bundles, Shader Optimization, C#, Automated Testing,
-                Performance Optimization, Cross-Platform Development, Team Collaboration.
+                Currently building a C++ render service at <strong>WTS Paradigm</strong> (a
+                <strong>Builders FirstSource</strong> subsidiary) for <strong>Home Configure</strong>, powering
+                automated Blender-based asset rendering for the platform.
             </p>
+            <ul>
+                <li>Architected the core service around <strong>async dispatching of concurrent render
+                        requests</strong>, with careful attention to <strong>thread safety and
+                        synchronization</strong> across shared Blender render state to keep multiple in-flight render
+                    jobs from stepping on each other.</li>
+                <li>Driving adoption of <strong>AI-assisted development with Claude</strong> on the team, exploring
+                    agentic workflows for code review, architecture planning, and test generation, and sharing these
+                    practices across the engineering org to raise velocity and code quality.</li>
+                <li><strong>Skills:</strong> C++, Multithreading &amp; Concurrency, Thread Safety,
+                    Async/Message-Based Dispatching, Blender SDK, CI/CD (Jenkins), AI-Assisted Development (Claude),
+                    Developer Enablement, Team Collaboration.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Home Configure - Unity 2019 to Unity 6 Migration</h3>
+            <div class="project-thumb">
+                <img src="./Images/homeconfigure.png" alt="Home Configure Thumbnail" />
+            </div>
+            <p>
+                Led a large-scale migration of 1000+ runtime-loaded assets from Unity 2019 to Unity 6 HDRP for
+                <strong>Home Configure</strong>, a production home visualization platform built at
+                <strong>WTS Paradigm</strong> (a subsidiary of <strong>Builders FirstSource</strong>) serving hundreds
+                of customers and thousands of concurrent users.
+            </p>
+            <ul>
+                <li>Designed and implemented a robust asset bundling pipeline to solve shader and HDRP compatibility
+                    issues.</li>
+                <li>Built an automated testing system to validate asset upgrades across the entire migration.</li>
+                <li><strong>Skills:</strong> Unity 6, HDRP, Asset Bundles, Shader Optimization, C#, Automated Testing,
+                    Performance Optimization, Cross-Platform Development, Team Collaboration.</li>
+            </ul>
         </div>
 
         <div class="project">
             <h3>Cross-Platform 3D Visualization and Inspection Tool</h3>
-            <img src="./Images/TorpdeoImage.png" style="width: 20% !important; height: 20% !important"
-                alt="3D Visualization Tool Thumbnail" />
+            <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via"
+                target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb">
+                    <img src="./Images/TorpdeoImage.png" alt="3D Visualization Tool Thumbnail" />
+                </div>
+            </a>
             <p>
                 Developed and shipped a cross-platform (web, desktop, VR) 3D visualization and inspection tool using
                 Unity and
@@ -167,13 +244,14 @@
                 tools, cross-platform development, CAD integration.
             </p>
             <a href="https://www.linkedin.com/posts/deptofdefense_training-us-navy-submariners-is-getting-easier-activity-7327694124235595776-Bhwa?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABMeOFIBrq1C-QJxN2zlKt4U6dqGdLelKFg&utm_campaign=share_via"
-                target="_blank">Software Demo Video Link</a> (Public Release Version)
+                target="_blank" rel="noopener noreferrer">Software Demo Video Link</a> (Public Release Version)
         </div>
 
         <div class="project">
             <h3>Data Integration and Automation System for Naval Analytics</h3>
-            <img src="Images/SubAndTorpedoImage.png" style="width: 20% !important; height: 20% !important"
-                alt="Naval Analytics Thumbnail" />
+            <div class="project-thumb">
+                <img src="Images/SubAndTorpedoImage.png" alt="Naval Analytics Thumbnail" />
+            </div>
             <p>
                 Developed and shipped a robust data integration and automation system for NAVSEA, enabling real-time
                 data
@@ -193,8 +271,11 @@
 
         <div class="project">
             <h3>Object Pooling</h3>
-            <img src="./Images/ObjectPoolingThumbnailImage.png" alt="Object Pooling Thumbnail"
-                style="width: 20%; height: auto" />
+            <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb">
+                    <img src="./Images/ObjectPoolingThumbnailImage.png" alt="Object Pooling Thumbnail" />
+                </div>
+            </a>
             <p>
                 This project implements a robust and efficient object pooling system using C# and Unity, designed to
                 optimize
@@ -208,14 +289,15 @@
                 code reuse, and
                 demonstrates <em>solid software engineering practices applicable beyond game development</em>.
             </p>
-            <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank">GitHub Link</a>
+            <a href="https://github.com/hoglundb/ObjectPoolingDemo" target="_blank" rel="noopener noreferrer">GitHub Link</a>
         </div>
 
         <div class="project">
             <h3>Behavior Tree AI System</h3>
-            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">
-                <img src="Images/BehaviorTreeThumbnailImage.png" style="width: 20% !important; height: 20% !important"
-                    alt="Behavior Tree Thumbnail" />
+            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb">
+                    <img src="Images/BehaviorTreeThumbnailImage.png" alt="Behavior Tree Thumbnail" />
+                </div>
             </a>
             <p>
                 This project showcases a C# behavior tree data structure I developed and implemented for animal AI
@@ -224,30 +306,10 @@
                 state and
                 decision-making, enabling more dynamic and reactive behaviors in the environment.
             </p>
-            <a href="https://github.com/hoglundb/UnityAIBehaviorTree" target="_blank">GitHub Link</a> |
-            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank">YouTube Video</a>
-        </div>
-
-        <div class="project">
-            <h3>Chess App with React.js and Node.js</h3>
-            <img src="./Images/ChessThumbnailImage.png" alt="Chess App Thumbnail" style="width: 20%; height: auto" />
-            <p>
-                A full-stack chess application built with React and Node.js that integrates
-                <strong>react-chess</strong> for the interactive board UI, <strong>chess.js</strong> for game rules and
-                validation,
-                and a backend Stockfish AI engine for strong computer opponent moves. Features custom React components
-                for game setup,
-                time controls,
-                endgame overlays, and AI bot selection. Designed primarily for Linux, but easily adapted to Windows with
-                alternate
-                Stockfish binaries.
-                This project highlights clean integration of third-party chess libraries, asynchronous AI processing,
-                and modern React
-                state management.
-            </p>
-            <a href="https://github.com/hoglundb/react-chess-app" target="_blank">GitHub Link</a>
+            <a href="https://github.com/hoglundb/UnityAIBehaviorTree" target="_blank" rel="noopener noreferrer">GitHub Link</a>
             |
-            <a href="https://brianhoglundportfolio.com/" target="_blank">Deployed Website Link</a>
+            <a href="https://www.youtube.com/watch?v=49WsIcEQUdc" target="_blank" rel="noopener noreferrer">YouTube
+                Video</a>
         </div>
     </section>
 
@@ -312,7 +374,7 @@
                 </li>
                 <li>Collaborated with researchers to ensure tool usability and data accuracy.</li>
             </ul>
-            <p>You can view my published work <a href="https://tinyurl.com/54u3yn6p" target="_blank">here.</a></p>
+            <p>You can view my published work <a href="https://tinyurl.com/54u3yn6p" target="_blank" rel="noopener noreferrer">here.</a></p>
         </div>
 
         <div class="experience">
@@ -339,11 +401,12 @@
         <p>Email: brian.g.hoglund@gmail.com</p>
         <p>
             LinkedIn:
-            <a href="https://www.linkedin.com/in/brian-gordon-hoglund-dev" target="_blank">LinkedIn Profile</a>
+            <a href="https://www.linkedin.com/in/brian-gordon-hoglund-dev" target="_blank" rel="noopener noreferrer">LinkedIn
+                Profile</a>
         </p>
         <p>
             GitHub:
-            <a href="https://github.com/hoglundb" target="_blank">GitHub Profile</a>
+            <a href="https://github.com/hoglundb" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
         </p>
     </section>
 
